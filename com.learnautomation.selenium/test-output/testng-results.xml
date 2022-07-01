@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25599" started-at="2022-07-01T10:17:58Z" finished-at="2022-07-01T10:18:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="25599" started-at="2022-07-01T10:17:58Z" finished-at="2022-07-01T10:18:24Z">
+      <class name="testcases.dataDrivenTestCases.LandingPageTest">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:testcases.dataDrivenTestCases.LandingPageTest@4f7d0008]" name="setUpSuite" is-config="true" duration-ms="1139" started-at="2022-07-01T15:47:57Z" finished-at="2022-07-01T15:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="intialisation()[pri:0, instance:testcases.dataDrivenTestCases.LandingPageTest@4f7d0008]" name="intialisation" is-config="true" duration-ms="8564" started-at="2022-07-01T15:47:58Z" finished-at="2022-07-01T15:48:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialisation -->
+        <test-method status="PASS" signature="doRegister()[pri:1, instance:testcases.dataDrivenTestCases.LandingPageTest@4f7d0008]" name="doRegister" duration-ms="16465" started-at="2022-07-01T15:48:07Z" finished-at="2022-07-01T15:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegister -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:testcases.dataDrivenTestCases.LandingPageTest@4f7d0008]" name="teardownMethod" is-config="true" duration-ms="552" started-at="2022-07-01T15:48:23Z" finished-at="2022-07-01T15:48:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doRegister status=SUCCESS method=LandingPageTest.doRegister()[pri:1, instance:testcases.dataDrivenTestCases.LandingPageTest@4f7d0008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dataDrivenTestCases.LandingPageTest@4f7d0008]" name="tearDown" is-config="true" duration-ms="1302" started-at="2022-07-01T15:48:24Z" finished-at="2022-07-01T15:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.dataDrivenTestCases.LandingPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
