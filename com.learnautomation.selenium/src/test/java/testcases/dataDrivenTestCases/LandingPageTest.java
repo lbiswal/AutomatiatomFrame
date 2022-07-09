@@ -1,22 +1,31 @@
 package testcases.dataDrivenTestCases;
 
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.BaseClass;
 import Pages.LandingPage;
 import Pages.RegisterPage;
-import utility.Helper;
+import utility.TestUtil;
 
 
 public class LandingPageTest extends BaseClass{
 	
 	
+	@DataProvider
+	public Iterator<Object[]> getTestData() {
+		ArrayList<Object[]> testData = TestUtil.getDataFromEcel();
+		return testData.iterator();
+	}
 
-	@Test(priority=1)
-	public void doRegister() throws InterruptedException{
+	@Test(dataProvider="getTestData")
+	public void doRegister(String fname,String lname,String email,String tel,String pwd,String cPwd) throws InterruptedException{
 		logger = report.createTest("Register");
 		LandingPage landingPage=PageFactory.initElements(driver, LandingPage.class);
 		landingPage.clickOnAccount();
@@ -24,12 +33,6 @@ public class LandingPageTest extends BaseClass{
 		landingPage.signUp();
 		logger.info("Staring application");
 		RegisterPage reg =PageFactory.initElements(driver, RegisterPage.class);
-		String fname = excel.getStringData(0, 1, 0);
-		String lname =excel.getStringData(0, 1, 1);
-		String email=excel.getStringData(0, 1, 2);
-		double tel=excel.getNumericData("user", 1, 3);
-		String pwd =excel.getStringData(0, 1, 4);
-		String cPwd =excel.getStringData(0, 1, 5);
 		reg.registerUser(fname, lname, email, tel, pwd, cPwd);
 		logger.pass("pass the test");
 	}

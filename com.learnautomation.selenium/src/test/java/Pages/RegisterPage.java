@@ -20,7 +20,7 @@ public class RegisterPage {
 	private By agree = By.name("agree");
 	private By submit = By.xpath("//input[@type='submit']");
 	
-	public void registerUser(String fname,String lname,String email,double tel,String pwd,String cPwd) {
+	public void registerUser(String fname,String lname,String email,String tel,String pwd,String cPwd) {
 		driver.findElement(firstName).sendKeys(fname);
 		driver.findElement(lastName).sendKeys(lname);
 		driver.findElement(emailId).sendKeys(email);
