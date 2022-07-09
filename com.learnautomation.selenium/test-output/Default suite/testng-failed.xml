@@ -6,17 +6,4 @@
       <class name="testcases.dataDrivenTestCases.LandingPageTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="testcases.dataDrivenTestCases.LandingPageTest">
-        <methods>
-          <include name="intialisation"/>
-          <include name="tearDown"/>
-          <include name="teardownMethod"/>
-          <include name="doRegister"/>
-          <include name="setUpSuite"/>
-        </methods>
-      </class> <!-- testcases.dataDrivenTestCases.LandingPageTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
